@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curso HTML Casa do Desenvolvedor</title>
+  </head>
+
+  <body>
+    <h1>Colocando em prática o aprendizado</h1>
+    <h2>Caracteres reservados</h2>
+
+    <p>
+      Para atender a semântica do HTML e favorecer seu site no SO, é importante
+      se atentar aos caracteres reservados. <br />
+      Vamos a alguns exemplos para que fique mais fácil de entender: <br />
+      Ao invés de eu colocar aspas de forma tradicional. Eu troco por &quot;.
+      Assim, fica &quot;melhor&quot; de acordo com a semântica do HTML. <br />
+      Existem diversos caracteres reservados, basta procurar na documentação
+      para aplica-los da melhor forma.
+    </p>
+
+    <h2 id="listas">Listas</h2>
+
+    <p>
+      Listas ordenadas são envolvidas pela tag &quot;ol&quot;. <br />
+      Listas não ordenadas são envolvidas pela tag &quot;ul&quot;. <br />
+      É necessário utilizar a tag ul, mesmo que visualmente não mude nada, por
+      conta da semântica e do SO da Google. <br />
+      <strong>A semântica é muito importante no HTML</strong>
+    </p>
+
+    <ol>
+      <li>Luísa</li>
+      <li>Kaio</li>
+      <li>Tainá</li>
+      <li>Júnior</li>
+      <li>Neto</li>
+    </ol>
+
+    <h3>Listas com descrição</h3>
+
+    <p>
+      O &quot;dl&quot; é utilizado para fazer uma lista com descrição. <br />
+      &quot;dt&quot; é o título e o &quot;dd&quot; é a descrição.
+    </p>
+
+    <dl>
+      <dt>Linguagem de programação</dt>
+      <dd>Javascript</dd>
+      <dt>Framework</dt>
+      <dd>Angular</dd>
+    </dl>
+
+    <h2>Citações</h2>
+
+    <p>
+      Abaixo estão as duas formas de gerar citações de acordo com as boas
+      práticas (semântica):<br />
+    </p>
+    <blockquote cite="https://cirogomes.com.br">
+      "Tatu não sobe em toco" é uma frase falada por Ciro Gomes.
+    </blockquote>
+
+    <a href="https://cirogomes.com.br" target="_blank">
+      <cite>Esta frase foi dita por Ciro Gomes</cite>
+    </a>
+
+    <h2>Abreviações</h2>
+
+    <p><abbr title="Hypertext Markup Language">HTML</abbr></p>
+
+    <h2>Endereço</h2>
+    <address>
+      <p>Rodrigo Dias</p>
+      <p>São Paulo-SP</p>
+    </address>
+
+    <!--Perceba que quando está dentro da tag adress, não existe a necessidade de quebrar linhas. Ele entende que tudo que está dentro dele é considerado endereço.-->
+
+    <h2>Representação de códigos</h2>
+
+    <p>
+      Por uma questão de semântica, é interessante informar para o HTML o que é
+      um código.
+    </p>
+
+    <pre>
+      <code>
+        document.querySelector("body").addEventListenner("click", () => {
+          alert("clicou");
+        })
+      </code>
+    </pre>
+
+    <h2>Links e âncoras</h2>
+
+    <a href="#listas" download="">Clique aqui para rever o conteúdo de listas.</a>
+
+    <p>Além de permitir através da âncora, ir para outro site ou buscar um elemento da própria página, também é possível ir em busca de imagens. <br/>
+    Exemplo abaixo.</p>
+
+    <a href="#listas" target="_blank">
+    </a>
+  </body>
+</html>
