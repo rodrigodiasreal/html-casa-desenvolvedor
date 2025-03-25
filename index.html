@@ -1,9 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
+
+    <!--Aceitar todos os caracteres-->
     <meta charset="UTF-8" />
+
+    <!-- Se adaptar a todos os dispositivos do usuário-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Título da página-->
     <title>Curso HTML Casa do Desenvolvedor</title>
+    <!--Importante para SEO-->
+    <meta name="description" content="Descrição da página">
+    <meta name="author" content="Menino Dias">
+    <meta name="robots" content="index, follow">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
   </head>
 
   <body>
@@ -95,12 +107,106 @@
 
     <h2>Links e âncoras</h2>
 
-    <a href="#listas" download="">Clique aqui para rever o conteúdo de listas.</a>
+    <a href="#listas" download=""
+      >Clique aqui para rever o conteúdo de listas.</a
+    >
 
-    <p>Além de permitir através da âncora, ir para outro site ou buscar um elemento da própria página, também é possível ir em busca de imagens. <br/>
-    Exemplo abaixo.</p>
+    <p>
+      Além de permitir através da âncora, ir para outro site ou buscar um
+      elemento da própria página, também é possível ir em busca de imagens.
+      <br />
+      Exemplo abaixo.
+    </p>
 
-    <a href="#listas" target="_blank">
-    </a>
+    <a href="#listas" target="_blank"> </a>
+
+    <h2>Formulários</h2>
+
+    <form action="/submit.html" method="post">
+      <input type="email" name="email" placeholder="Digite seu e-mail" />
+      <input type="password" name="password" placeholder="Digite sua senha" />
+      <button type="submit">Clique aqui</button>
+    </form>
+
+    <h2>Tabelas</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>E-mail</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Rodrigo Dias</td>
+          <td>rodrigod.1988@outlook.com</td>
+        </tr>
+
+        <tr>
+          <td>Bruna Buniotto</td>
+          <td>brunabuniotto@gmail.com</td>
+        </tr>
+
+        <tfoot>
+          <tr>
+            <td>Total de contatos</td>
+            <td>2</td>
+          </tr>
+        </tfoot>
+
+        <h2>Tabelas complexas</h2>
+
+        
+       
+        <table>
+
+          <caption>Curso por Polo por curso por turma</caption>
+
+          <colgroup>
+            <col>
+            <col span = "2" style="background-color: red;">
+            <col span = "2" style="background-color: yellow;">
+          </colgroup>
+  
+          
+          <thead>
+            <tr>
+              <th rowspan="2"></th>
+              <th scope="colgroup" colspan="2">Curso 1</th>
+              <th scope="colgroup" colspan="2">Curso 2</th>
+            </tr>
+
+            <tr>
+              <th scope="col">Turma 1</th>
+              <th scope="col">Turma 2</th>
+              <th scope="col">Turma 1</th>
+              <th scope="col">Turma 2</th>
+            </tr>
+          </thead>
+
+          <tbody>
+              <tr>
+                <th scope="row">Polo Sede</th>
+                <td>20</td>
+                <td>30</td>
+                <td>10</td>
+                <td>20</td>
+            </tr>
+              <tr>
+                <th scope="row" >Polo Rio</th>
+                <td>50</td>
+                <td>70</td>
+                <td>80</td>
+                <td>50</td>
+            </tr>
+              
+            </tr>
+          </tbody>
+          
+        </table>
+      </tbody>
+    </table>
   </body>
 </html>
